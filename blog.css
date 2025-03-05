@@ -1,0 +1,151 @@
+header{
+    background-color: black;
+}
+.introduction{
+    height:auto;
+    max-width: 100%;
+    text-align:center;
+    color: aliceblue;
+    display: flow-root;
+}
+.menu{
+   background-color: rgb(28, 28, 28);
+   text-decoration: none;
+   color: aliceblue;
+}
+.menu ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+.menu ul li{
+    display: inline;
+    padding: 15px;
+}
+
+.container{
+    height:auto;
+    width: auto;
+    background-color: rgb(171, 239, 239);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.box1, .box2, .box3 {
+    width:30px;
+    min-width: 300px;
+    height: auto;
+    background-color: rgb(153, 237, 153);
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.box2 {
+    background-color: rgb(232, 205, 170);
+}
+
+.box3 {
+    background-color: rgb(236, 120, 104);
+}
+
+.image-style{
+    height: 300px;
+    width: 320px;
+    border-radius: 5px;
+}
+.custom-video{
+    height:300px ;
+    width: 300px;
+   border-radius:5px;
+}
+.container1, .container2 {
+    width: auto;
+    background-color: rgb(173, 173, 222);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    margin: 5px 0;}
+form {
+    display:flex ;
+    flex-direction:column;
+
+}
+label {
+    font-weight: bold;
+    font-style: italic;
+
+}
+input, textarea {
+    width: 98%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #c71a1a;
+    border-radius: 5px;
+
+}
+button{
+    background: #efec57;
+    color: rgb(10, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: hsl(211, 71%, 56%);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1, .box2, .box3 {
+        width: 90%;
+    }
+
+    .menu ul {
+        padding: 10px;
+    }
+
+    .menu ul li {
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box1, .box2, .box3 {
+        width: 100%;
+        margin: 5px 0;
+    }
+  
+}
+
+body {
+    font-size: 16px;
+    background-color: white;
+}
+footer {
+    background-color: #251b1b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    font-size: 14px;
+    border-radius: 10px;
+}
